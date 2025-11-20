@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Sources — Eunline Docs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .documents {
+      max-width: var(--maxw);
+      margin: 24px auto;
+      padding: 0 18px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .doc-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 14px rgba(16, 24, 40, 0.04);
+      transition: transform 0.2s ease;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .doc-title {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--accent-2);
+      margin-bottom: 6px;
+    }
+
+    .doc-desc {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .doc-link {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .search-box {
+      display: flex;
+      gap: 12px;
+      margin: 0 auto 24px;
+      max-width: 600px;
+    }
+
+    .search-box input {
+      flex: 1;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+   
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <div class="logo-box"><img src="assets/logo.png" alt="Eunline Logo" class="logo-img" /></div>
+      <div>
+        <h1>Eunline Docs</h1>
+        <p class="muted">Academic resources — trustworthy & easy</p>
+      </div>
+    </div>
+    <button class="menu-toggle btn-icon" id="mobileBtn"><i class="fas fa-bars"></i></button>
+    <nav class="topnav" id="topnav">
+      <a href="index.html">Home</a>
+      <a href="sources.html">Sources</a>
+      <a href="#">Categories</a>
+      <a href="upload.html">Upload</a>
+      <a href="documents.html">Documents</a>
+    </nav>
+    <div class="controls-right">
+      <button class="btn-icon" id="notifBtn"><i class="fas fa-bell"></i></button>
+      <button id="themeBtn" class="btn-icon"><i class="fas fa-moon"></i></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Academic Documents</h2>
+    <p>Browse or search for notes, books, exams, and guides. If not found, Google will assist.</p>
+  </section>
+
+  <!-- SEARCH BAR -->
+  <div class="search-box">
+    <input type="text" id="docSearch" placeholder="Search documents..." />
+  </div>
+
+  <!-- DOCUMENTS GRID -->
+  <main class="documents" id="documentsGrid">
+    <div class="doc-card">
+      <div class="doc-title">Physics Form 4 Notes</div>
+      <div class="doc-desc">Comprehensive notes covering mechanics, electricity, and waves for Form Four students.</div>
+      <a href="docs/physics-form4.pdf" class="doc-link" target="_blank">Download PDF</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-title">Biology Past Papers NECTA</div>
+      <div class="doc-desc">Past exam papers for Biology from NECTA, including marking schemes.</div>
+      <a href="docs/biology-pastpapers.pdf" class="doc-link" target="_blank">Download PDF</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-title">Civics Form 3 Book</div>
+      <div class="doc-desc">A full textbook for Civics Form Three, covering government, democracy, and leadership.</div>
+      <a href="docs/civics-form3.pdf" class="doc-link" target="_blank">Download PDF</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>About Eunline</h4>
+          <p>Eunline Docs Pro is built to empower teachers and students across Tanzania with easy access to academic resources.<a href="about.html"><strong>more..</strong></a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:info@eunline.co.tz"><i class="fas fa-envelope"></i> info@eunline.co.tz</a>
+        <a href="tel:+255700000000"><i class="fas fa-phone"></i> +255 700 000 000</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> SAUT, Mwanza, Tanzania</a>
+      </div>
+      <div>
+        <h4>Quick Settings</h4>
+        <p><button id="themeFooterBtn" class="share"><i class="fas fa-moon"></i> Toggle Theme</button></p>
+        <a href="#"><i class="fas fa-language"></i> Language: English</a>
+      </div>
+      <div>
+        <h4>Follow & Chat</h4>
+        <div class="socials">
+          <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/255700000000?text=Habari%20Eunline" class="wa"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="tg"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#" class="tk" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      © <span id="year"></span> Eunline Docs Pro. Designed by Eunline Devs — Professional & Trusted.
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+
+  <script>
+ const themeBtn = document.getElementById('themeBtn');
+    const themeFooterBtn = document.getElementById('themeFooterBtn');
+    function setTheme(isDark) {
+      if (isDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('eunline_theme', 'dark');
+        themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        themeFooterBtn.innerHTML = '<i class="fas fa-sun"></i> Toggle Theme';
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('eunline_theme', 'light');
+        themeBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        themeFooterBtn.innerHTML = '<i class="fas fa-moon"></i> Toggle Theme';
+      }
+    }
+
+    (function () {
+      const saved = (localStorage.getItem('eunline_theme') || '').toLowerCase();
+      if (saved === 'dark') setTheme(true);
+      else if (saved === 'light') setTheme(false);
+      else setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
+    })();
+
+    themeBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
+    themeFooterBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
+    // Mobile menu
+    const mobileBtn = document.getElementById('mobileBtn');
+    const topnav = document.getElementById('topnav');
+    mobileBtn.addEventListener('click', () => topnav.classList.toggle('show'));
+
+    // Search filter + Google fallback
+    const docSearch = document.getElementById("docSearch");
+    const docCards = document.querySelectorAll(".doc-card");
+
+    docSearch.addEventListener("input", function () {
+      const query = this.value.trim().toLowerCase();
+      let matchCount = 0;
+
+      docCards.forEach(card => {
+        const title = card.querySelector(".doc-title").textContent.toLowerCase();
+        const desc = card.querySelector(".doc-desc").textContent.toLowerCase();
+        const match = title.includes(query) || desc.includes(query);
+        card.style.display = match ? "block" : "none";
+        if (match) matchCount++;
+      });
+
+      if (matchCount === 0 && query.length > 2) {
+        const googleURL = `https://www.google.com/search?q=${encodeURIComponent(query + " filetype:pdf site:.edu OR site:.go.tz")}`;
+        window.open(googleURL, "_blank");
+      }
+    });
+    // Link to notifications page
+notifBtn.addEventListener('click', () => {
+  window.location.href = 'notifications.html';
+});
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

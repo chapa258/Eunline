@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>About — Eunline Docs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-section {
+      max-width: var(--maxw);
+      margin: 24px auto;
+      padding: 0 18px 40px;
+    }
+
+    .about-block {
+      margin-bottom: 32px;
+    }
+
+    .about-block h3 {
+      font-size: 20px;
+      color: var(--accent-2);
+      margin-bottom: 10px;
+    }
+
+    .about-block p {
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .faq-item h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .faq-item p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .partner-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      box-shadow: 0 4px 14px rgba(16, 24, 40, 0.04);
+    }
+
+    .partner-card h5 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent-2);
+      margin-bottom: 6px;
+    }
+
+    .partner-card p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand" aria-label="Eunline brand">
+      <div class="logo-box"><img src="assets/logo.jpg" alt="Eunline logo" width="100%" height="100%"></div>
+      <div>
+        <h1>Eunline Docs</h1>
+        <p class="muted">Academic resources — trustworthy &amp; easy</p>
+      </div>
+    </div>
+
+    <button class="menu-toggle btn-icon" id="mobileBtn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+
+    <nav class="topnav" id="topnav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="sources.html">Sources</a>
+      <a href="maintenance.html">Stationeries</a>
+      <a href="maintenance1.html">Upload</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="controls-right">
+      
+      <button id="themeBtn" class="btn-icon"><i class="fas fa-moon"></i></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>About Eunline Docs</h2>
+    <p>Learn more about our mission, the team behind this platform, and how we support education.</p>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="about-section">
+
+    <div class="about-block">
+      <h3>Our Mission</h3>
+      <p>Eunline Docs Pro is built to empower teachers and students across Tanzania with easy access to academic resources. From lesson plans to past papers, we aim to simplify learning and teaching through technology.</p>
+    </div>
+
+    <div class="about-block">
+      <h3>Developed by SkyGlow</h3>
+      <p>This platform was proudly designed and developed by <strong>SkyGlow</strong> — a Tanzanian tech company focused on building scalable, user-friendly digital solutions for education, business, and community impact.</p>
+    </div>
+
+    <div class="about-block">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item">
+        <h4>Who can use Eunline Docs?</h4>
+        <p>Any teacher, student, or parent looking for academic materials for secondary education in Tanzania.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is it free to download documents?</h4>
+        <p>Yes, all resources are free to access and download. We believe in open education.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I upload my own materials?</h4>
+        <p>Yes, teachers can upload verified lesson plans, notes, and schemes through the Upload section.</p>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h3>Our Partners</h3>
+      <div class="partners-grid">
+        <div class="partner-card">
+          <h5>Tanzania Institute of Education (TIE)</h5>
+          <p>Provides official curriculum and teaching guides.</p>
+        </div>
+        <div class="partner-card">
+          <h5>NECTA</h5>
+          <p>Supports access to past papers and exam formats.</p>
+        </div>
+        <div class="partner-card">
+          <h5>Shule Direct</h5>
+          <p>Offers digital learning tools for students and teachers.</p>
+        </div>
+        <div class="partner-card">
+          <h5>SkyGlow</h5>
+          <p>Lead developer and technical partner of Eunline Docs Pro.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>About Eunline</h4>
+          <p>Eunline Docs Pro is built to empower teachers and students across Tanzania with easy access to academic resources.<a href="about.html"><strong>more..</strong></a></p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:Eunline@outlook.com"><i class="fas fa-envelope"></i> Eunline@outlook.com</a>
+        <a href="tel:+255764014642"><i class="fas fa-phone"></i> +255 764 014 642</a>
+        <a href="https://maps.google.com/?q=SAUT+Mwanza" target="_blank"><i class="fas fa-map-marker-alt"></i> SAUT, Mwanza, Tanzania</a>
+      </div>
+
+
+      <div>
+        <h4>Quick Settings</h4>
+        <p style="margin:0 0 8px 0; color:var(--muted)"><button id="themeFooterBtn" class="share" style="font-weight:700"><i class="fas fa-moon"></i> Toggle Theme</button></p>
+        <a href="#" style="color:var(--muted)"><i class="fas fa-language"></i> Language: English</a>
+      </div>
+
+      <div>
+        <h4>Follow & Chat</h4>
+        <div class="socials" role="list">
+          <a href="#" class="fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/255764014642?text=Habari%20Eunline" class="wa" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="tg" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#" class="tk" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      © <span id="year"></span> Eunline Docs Pro. Designed by SkyGlow — Professional & Trusted.
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="scriptss.js"></script>
+  <script>
+    const themeBtn = document.getElementById('themeBtn');
+    const themeFooterBtn = document.getElementById('themeFooterBtn');
+    function setTheme(isDark) {
+      if (isDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('eunline_theme', 'dark');
+        themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        themeFooterBtn.innerHTML = '<i class="fas fa-sun"></i> Toggle Theme';
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('eunline_theme', 'light');
+        themeBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        theme[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/keisrets/test/tree/1128d735bda6a5ba8582817ef5791421506586ba/index.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054&citationId=1&citationId=2&citationId=3&citationId=4 "github.com")

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Sources — Eunline Docs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .sources {
+      max-width: var(--maxw);
+      margin: 24px auto;
+      padding: 0 18px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .source-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 14px rgba(16, 24, 40, 0.04);
+      transition: transform 0.2s ease;
+    }
+
+    .source-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .source-title {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--accent-2);
+      margin-bottom: 6px;
+    }
+
+    .source-desc {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .source-link {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand" aria-label="Eunline brand">
+      <div class="logo-box"><img src="assets/logo.jpg" alt="Eunline logo" width="100%" height="100%"></div>
+      <div>
+        <h1>Eunline Docs</h1>
+        <p class="muted">Academic resources — trustworthy &amp; easy</p>
+      </div>
+    </div>
+
+    <button class="menu-toggle btn-icon" id="mobileBtn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+
+    <nav class="topnav" id="topnav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="sources.html">Sources</a>
+      <a href="maintenance.html">Stationeries</a>
+      <a href="maintenance1.html">Upload</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="controls-right">
+      
+      <button id="themeBtn" class="btn-icon"><i class="fas fa-moon"></i></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>External Academic Sources</h2>
+    <p>If you can't find a document here, explore these trusted websites for more educational resources.</p>
+  </section>
+
+  <!-- SOURCES GRID -->
+  <main class="sources">
+    <div class="source-card">
+      <div class="source-title">Tanzania Institute of Education (TIE)</div>
+      <div class="source-desc">Official syllabi, schemes of work, and teaching guides for Tanzanian secondary schools.</div>
+      <a href="https://www.tie.go.tz" class="source-link" target="_blank">Visit TIE</a>
+    </div>
+
+    <div class="source-card">
+      <div class="source-title">NECTA</div>
+      <div class="source-desc">Access past papers, results, and exam formats from the National Examinations Council of Tanzania.</div>
+      <a href="https://www.necta.go.tz" class="source-link" target="_blank">Visit NECTA</a>
+    </div>
+
+    <div class="source-card">
+      <div class="source-title">Shule Direct</div>
+      <div class="source-desc">Digital learning platform offering notes, videos, and quizzes for Tanzanian students.</div>
+      <a href="https://www.shuledirect.co.tz" class="source-link" target="_blank">Visit Shule Direct</a>
+    </div>
+
+    <div class="source-card">
+      <div class="source-title">Khan Academy</div>
+      <div class="source-desc">Free global learning platform with lessons in math, science, economics, and more.</div>
+      <a href="https://www.khanacademy.org" class="source-link" target="_blank">Visit Khan Academy</a>
+    </div>
+
+    <div class="source-card">
+      <div class="source-title">OpenStax</div>
+      <div class="source-desc">Free textbooks and resources for high school and college-level subjects.</div>
+      <a href="https://www.openstax.org" class="source-link" target="_blank">Visit OpenStax</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>About Eunline</h4>
+          <p>Eunline Docs Pro is built to empower teachers and students across Tanzania with easy access to academic resources.<a href="about.html"><strong>more..</strong></a></p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:Eunline@outlook.com"><i class="fas fa-envelope"></i> Eunline@outlook.com</a>
+        <a href="tel:+255764014642"><i class="fas fa-phone"></i> +255 764 014 642</a>
+        <a href="https://maps.google.com/?q=SAUT+Mwanza" target="_blank"><i class="fas fa-map-marker-alt"></i> SAUT, Mwanza, Tanzania</a>
+      </div>
+
+      <div>
+        <h4>Quick Settings</h4>
+        <p style="margin:0 0 8px 0; color:var(--muted)"><button id="themeFooterBtn" class="share" style="font-weight:700"><i class="fas fa-moon"></i> Toggle Theme</button></p>
+        <a href="#" style="color:var(--muted)"><i class="fas fa-language"></i> Language: English</a>
+      </div>
+
+      <div>
+        <h4>Follow & Chat</h4>
+        <div class="socials" role="list">
+          <a href="#" class="fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/255764014642?text=Habari%20Eunline" class="wa" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="tg" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#" class="tk" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      © <span id="year"></span> Eunline Docs Pro. Designed by SkyGlow — Professional & Trusted.
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="scriptss.js"></script>
+  <script>
+    const themeBtn = document.getElementById('themeBtn');
+    const themeFooterBtn = document.getElementById('themeFooterBtn');
+    function setTheme(isDark) {
+      if (isDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('eunline_theme', 'dark');
+        themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        themeFooterBtn.innerHTML = '<i class="fas fa-sun"></i> Toggle Theme';
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('eunline_theme', 'light');
+        themeBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        themeFooterBtn.innerHTML = '<i class="fas fa-moon"></i> Toggle Theme';
+      }
+    }
+
+    (function () {
+      const saved = (localStorage.getItem('eunline_theme') || '').toLowerCase();
+      if (saved === 'dark') setTheme(true);
+      else if (saved === 'light') setTheme(false);
+      else setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
+    })();
+
+    themeBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
+    themeFooterBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== '[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/keisrets/test/tree/1128d735bda6a5ba8582817ef5791421506586ba/index.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054&citationId=1&citationId=2&citationId=3&citationId=4 "github.com")
